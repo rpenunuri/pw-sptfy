@@ -6,6 +6,24 @@ This project demonstrates how to use [Playwright](https://playwright.dev/) with 
 
 The project is structured as follows:
 
+```sh
+├── .github/
+│   ├── workflows/
+├── pages/
+│   ├── desktop/
+│   ├── mobile/
+├── scripts/
+├── tests/
+│   ├── desktop/
+│   ├── mobile/
+├── Dockerfile
+├── docker-compose.yml
+├── package-lock.json
+├── package.json
+├── playwright.config.ts
+├── README.md
+```
+
 - `tests`: This directory contains the test files.
 - `pages`: This directory contains the Page Object Model files.
 - `scripts`: This directory contains scripts for running the tests.
