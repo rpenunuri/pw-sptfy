@@ -58,10 +58,10 @@ export default defineConfig({
       testDir: './tests/mobile',
       use: { ...devices['Pixel 5'] },
     },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
+    {
+      name: 'mobile-safari',
+      use: { ...devices['iPhone 12'] },
+    },
 
     /* Test against branded browsers. */
     // {
