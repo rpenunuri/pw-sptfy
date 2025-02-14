@@ -1,0 +1,11 @@
+services:
+  e2e-tests:
+    build: .
+    image: e2e-tests-playwright:latest
+    environment:
+      - BASE_URL=${BASE_URL:-}
+      - BROWSER=${BROWSER:-}
+      - GROUP=${GROUP:-}
+    volumes:
+      - ./test-results:/app/test-results
+      - ./playwright-report:/app/playwright-report

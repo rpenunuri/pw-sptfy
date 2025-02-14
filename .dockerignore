@@ -1,0 +1,20 @@
+# Ignore node_modules directory
+node_modules
+
+# Ignore local environment files
+.env
+.env.local
+.env.dev
+.env.stage
+.env.prod
+
+# Ignore test results and reports
+test-results
+playwright-report
+
+# Ignore other unnecessary files and directories
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+README.md
