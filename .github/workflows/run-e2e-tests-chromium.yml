@@ -11,9 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build and run tests with Docker Compose
-        run: |
-          BROWSER=chromium docker compose up --build --exit-code-from e2e-tests
+      
+      - name: Set execute permissions for scripts
+        run: chmod +x ./scripts/*.sh
+
+      - name: Build and run tests with run-e2e-tests.sh
+        run: ./scripts/run-e2e-tests.sh -b chromium
+
       - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@v4
