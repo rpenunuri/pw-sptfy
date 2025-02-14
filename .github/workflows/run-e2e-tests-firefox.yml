@@ -1,4 +1,4 @@
-name: Run e2e tests with mobile safari
+name: Run e2e tests with firefox
 on:
   push:
     branches: [ main ]
